@@ -9,6 +9,7 @@
     <table class="table table-striped table-condensed table-hover">
         <thead>
             <tr>
+                <th>Account Image</th>
                 <th>Login ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -20,6 +21,11 @@
             @foreach (var i in Model.Users)
             {
                 <tr>
+                    <td>@if (!string.IsNullOrEmpty(i.AccountImage))
+                        {
+                            <img src ="@i.AccountImage" alt="Account Image" width="25" height="25" />
+                        }
+                    </td>
                     <td>@Html.DisplayFor(m => i.LoginName)</td>
                     <td>@Html.DisplayFor(m => i.FirstName)</td>
                     <td>@Html.DisplayFor(m => i.LastName)</td>
