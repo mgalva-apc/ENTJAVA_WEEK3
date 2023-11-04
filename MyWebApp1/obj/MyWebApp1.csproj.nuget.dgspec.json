@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj": {}
+    "C:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj": {
+    "C:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj",
         "projectName": "MyWebApp1",
-        "projectPath": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj",
+        "projectPath": "C:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj",
         "packagesPath": "C:\\Users\\Beatrice\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\obj\\",
+        "outputPath": "C:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Beatrice\\AppData\\Roaming\\NuGet\\NuGet.Config"

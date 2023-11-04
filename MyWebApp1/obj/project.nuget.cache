@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rvq2LdZg+bDINA/pHhWi2uIuLjkiZnrTufEziCxGrVVlkxXF/vy37GmRo9GubwxHrNX7uF4p/Wa6d22I+9lD6Q==",
+  "dgSpecHash": "hQpTzAqV7TNdVDdgZbROr9WX2axaChQkhk1EvJ9jn+pIhQhIqgQDsVXyUZtcWd/YkhpsvQ2dLUdGq7hX9TCdGg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj",
+  "projectFilePath": "C:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\MyWebApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Beatrice\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Beatrice\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
