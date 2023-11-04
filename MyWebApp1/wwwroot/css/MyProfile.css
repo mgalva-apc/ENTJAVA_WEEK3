@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 5vh;
+}
+
+div#rightside{
+    background-color:aliceblue;
+    width: 70vw;
+    height: 70vh;
+    padding: 5vh;
+}
+
+.leftside{
+    background-color:aliceblue;
+    text-align: center;
+    width: 25vw;
+    height: 70vh;
+    padding: 5vh;
+}
+
+p#field{
+    font-size: 1.7vw;
+}
+
+p#input{
+    font-size: 1.2vw;
+    background-color: white;
+    border: 1px darkcyan solid;
+    padding: 0.5vw;
+}
+
+img#pp{
+    width: 15vw;
+    border-radius: 50%;
+}
+
+.moredeets{
+    font-weight: bold;
+    size: 2vw;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EGatpJy3oX6qC9R8KIVmI7v0kv5q7+ysOPvdFrgsw1U=",
+  "Hash": "wHzkKF03WHg7A4q+XvZanmTfCTs3Qh0K/Dx9SvIrXjU=",
   "Source": "MyWebApp1",
   "BasePath": "_content/MyWebApp1",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\MyWebApp1.bundle.scp.css"
+    },
+    {
+      "Identity": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\wwwroot\\css\\MyProfile.css",
+      "SourceId": "MyWebApp1",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\wwwroot\\",
+      "BasePath": "_content/MyWebApp1",
+      "RelativePath": "css/MyProfile.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MyProfile.css"
     },
     {
       "Identity": "c:\\Users\\Beatrice\\Documents\\cloneagain\\ENTJAVA_WEEK3\\MyWebApp1\\wwwroot\\css\\site.css",

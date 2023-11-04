@@ -71,6 +71,7 @@ namespace MyWebApp1.Controllers
         [HttpPut]
         public async Task<ActionResult> Update([FromBody] UserModel userData)
         {
+            ModelState.Remove("Password");
             UserManager um = new UserManager();
             if (um.IsLoginNameExist(userData.LoginName))
             {
