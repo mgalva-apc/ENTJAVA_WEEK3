@@ -40,3 +40,18 @@ img#pp{
     font-weight: bold;
     size: 2vw;
 }
+
+div#usercontainer{
+    background-color: aliceblue;
+    margin-top: 5vh;
+}
+
+h4#tabletitlepart{
+    font-size: 2.3vw;
+    margin-top: 5vh;
+}
+
+p#tabledescribe{
+    font-size: 1.5vw;
+}
+
