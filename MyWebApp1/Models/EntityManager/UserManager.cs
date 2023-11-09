@@ -129,6 +129,35 @@ namespace MyWebApp1.Models.EntityManager
  
         }
 
+        public void UpdateProfileDetailed(UserModel user, string username)
+        {
+            using (MyDBContext db = new MyDBContext())
+            {
+                SystemUsers existingSysUser = db.SystemUsers.FirstOrDefault(
+                    u => u.LoginName == username
+                );
+                Users existingUser = db.Users.FirstOrDefault(
+                    u => u.UserID == existingSysUser.UserID
+                );
+
+                if (existingSysUser == null && existingUser == null)
+                {
+                    return;
+                }
+
+                existingSysUser.ModifiedBy = 1; // This has to be updated
+                existingSysUser.ModifiedDateTime = DateTime.Now;
+                existingSysUser.LoginName = user.LoginName;
+                existingSysUser.PasswordEncryptedText = user.Password;
+
+                existingUser.FirstName = user.FirstName;
+                existingUser.LastName = user.LastName;
+                existingUser.Gender = user.Gender;
+
+                db.SaveChanges();
+            }
+        }
+
         public UsersModel GetCurrUse(string loginName)
         {
             UsersModel usmo = new UsersModel();
@@ -142,6 +171,7 @@ namespace MyWebApp1.Models.EntityManager
                             on u.UserID equals ur.UserID
                             join r in datab.Role
                             on ur.LookUpRoleID equals r.RoleID
+
                             where us.LoginName == loginName // Filter by the username
                             select new { u, us, r, ur };
 
@@ -159,6 +189,47 @@ namespace MyWebApp1.Models.EntityManager
             }
             return usmo;
         }
+
+        public UserModel GetCurrUseEXT(string user)
+        {
+            UserModel userModel = new();
+
+            using (MyDBContext db = new MyDBContext())
+            {
+                var users =
+                    from u in db.Users
+                    join us in db.SystemUsers on u.UserID equals us.UserID
+                    join ur in db.UserRole on u.UserID equals ur.UserID
+                    join r in db.Role on ur.LookUpRoleID equals r.RoleID
+                    where us.LoginName == user
+                    select new
+                    {
+                        u,
+                        us,
+                        r,
+                        ur
+                    };
+
+                userModel = users
+                    .Select(
+                        records =>
+                            new UserModel()
+                            {
+                                LoginName = records.us.LoginName,
+                                FirstName = records.u.FirstName,
+                                LastName = records.u.LastName,
+                                Gender = records.u.Gender,
+                                CreatedBy = records.u.CreatedBy,
+                                AccountImage = records.u.AccountImage ?? string.Empty,
+                                RoleID = records.ur.LookUpRoleID,
+                                RoleName = records.r.RoleName
+                            }
+                    )
+                    .First();
+            }
+            return userModel;
+        }
+
  
         public UsersModel GetAllUsers()
         {
